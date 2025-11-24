@@ -1,69 +1,175 @@
-# Evolución del Teatro Musical en España (En curso)
+Evolución del Sector Teatral en España (2016–2023)
+Análisis del teatro en España + EDA específico del teatro musical
+Dataset principal + Dataset musical + Datos complementarios
+🟦 1. Introducción
 
-Proyecto de análisis orientado a estudiar la evolución del teatro musical en España mediante técnicas de análisis de datos, con especial atención a los cambios antes, durante y después de la pandemia. El proyecto incluye la recopilación, limpieza y normalización de datos sobre productoras, obras, giras y actividad por año, e incorpora un módulo económico en desarrollo basado en precios, capacidad de los teatros y estimaciones de ticket medio.
+Este proyecto analiza la evolución del sector teatral en España entre 2016 y 2023, incluyendo:
 
----
+Volumen anual de espectadores
 
-## Objetivos
+Ingresos generados por el teatro
 
-- Analizar la actividad de las principales productoras de teatro musical en España.
-- Evaluar el número de producciones, giras y variaciones anuales.
-- Identificar tendencias y cambios estructurales pre-pandemia, durante la pandemia y en la etapa posterior.
-- Construir un dataset limpio y preparado para análisis exploratorios y visualizaciones.
-- Integrar un análisis económico preliminar (ticket medio, capacidad, comparativas entre ciudades).
-- Utilizar IA (ChatGPT) como apoyo en documentación, prompting y diseño de flujos de trabajo.
+Número de obras estrenadas
 
----
+Impacto de la pandemia en el sector
 
-## Datos
+Recuperación y tendencias recientes
 
-### Dataset actual
-Información recopilada manualmente:
-- Productoras
-- Producciones por compañía
-- Años de inicio y fin
-- Estado (activo / inactivo)
-- Existencia de gira
-- Atributos relevantes de cada producción
+Además, incorpora un análisis específico del teatro musical, uno de los motores económicos y culturales más relevantes dentro del teatro español.
 
-### Dataset económico (en desarrollo)
-- Precios máximos y mínimos por producción
-- Capacidad de teatros
-- Ticket medio estimado
-- Datos comparativos entre ciudades
+El proyecto combina datos oficiales del Ministerio de Cultura, datos recopilados manualmente sobre la industria del musical y varios datasets complementarios para contextualizar el comportamiento del público y la inversión cultural en España.
 
----
+🟩 2. Estructura del repositorio
+/data_principal/
+    teatro_espana_2016_2023_limpio.csv
+    Eda_teatro_espana.ipynb
 
-## Tecnologías
+/data_musicales/
+    musicales_limpio_final.csv
+    Eda_data_musicales_PORTFOLIO.ipynb
 
-- **Python**: Pandas, Numpy  
-- **Jupyter Notebook**  
-- **Power BI / Tableau** (visualización en fases posteriores)  
-- **ChatGPT**: prompting, documentación y apoyo técnico  
-- **GitHub**: versionado y seguimiento del proyecto  
+/data_contexto/
+    Asistencia_artes_escenicas2025.csv
+    porcentaje_PIB_cultura_2023.csv
+    precios_musicales_limpio.csv
 
----
+README.md
 
-## Procesos actuales
+🟥 3. Objetivos del proyecto
+✔ Analizar la evolución del teatro en España:
 
-### Limpieza y normalización
-- Estandarización de nombres de obras y productoras  
-- Eliminación de duplicados  
-- Reordenación y corrección de columnas  
-- Generación de dataset limpio para análisis  
+Espectadores por año
 
-### Análisis exploratorio inicial (EDA)
-- Conteo de producciones por productora  
-- Actividad anual y comparativa temporal  
-- Identificación de tendencias pre/durante/post pandemia  
-- Detección de picos de producción y descensos  
+Recaudación total
 
----
+Número de musicales/obras estrenadas
 
-## Próximas etapas
+✔ Identificar tendencias clave:
 
-- Integración del dataset económico (precios, capacidad, ticket medio)  
-- Desarrollo de visualizaciones en Power BI / Tableau  
-- Comparativa detallada del impacto pandemia vs. recuperación  
-- Estimación económica preliminar por producción o temporada  
-- Elaboración del dashboard final y síntesis de conclusiones técnicas  
+Caída por pandemia en 2021
+
+Recuperación acelerada en 2022–2023
+
+Ciclos de producción y consumo
+
+✔ Estudiar el teatro musical como subindustria:
+
+Volumen de producciones
+
+Principales productoras
+
+Teatros con mayor actividad
+
+Comparación por años
+
+✔ Integrar datos contextuales:
+
+Inversión cultural (% del PIB)
+
+Perfil demográfico de la asistencia
+
+Precios del musical en 2026 (muestra manual real)
+
+🟨 4. Contenido del análisis (resumen)
+📌 EDA 1 – Teatro en España (2016–2023)
+
+Incluye:
+
+Limpieza y normalización de datos
+
+Gráficas de evolución anual
+
+Comparativa entre espectadores e ingresos
+
+Detección de anomalías (impacto 2021)
+
+Conclusiones económicas y culturales
+
+Guarda el CSV final limpio
+
+📌 EDA 2 – Teatro musical en España
+
+Incluye:
+
+Limpieza del dataset musical
+
+Distribución por productora
+
+Distribución por teatro
+
+Giras sí/no
+
+Evolución por año
+
+Heatmaps y comparativas
+
+Conclusiones específicas del segmento musical
+
+📌 Datasets complementarios
+
+No forman parte del EDA principal, pero enriquecen el proyecto:
+
+Asistencia por sexo y edad
+
+% del PIB destinado a cultura
+
+Precios de musicales en 2026
+
+🟦 5. Principales conclusiones
+🟧 Teatro en España:
+
+Estabilidad pre-pandemia (2017–2019)
+
+Colapso histórico en 2021 por restricciones
+
+Fuerte recuperación en 2022 y 2023
+
+Ingresos y espectadores evolucionan en paralelo
+
+Aumento significativo de obras estrenadas en los últimos años
+
+🟩 Teatro musical:
+
+Concentrado en Stage, SOM, LETSGO y Beon
+
+Actividad centrada en Madrid (Coliseum, Lope de Vega, Rialto…)
+
+Aumento notable de producciones desde 2021
+
+La gira se consolida como estrategia clave
+
+El musical actúa como motor económico del teatro español
+
+🟦 Contexto:
+
+La Administración Local es la que mayor % del PIB destina a cultura
+
+Los jóvenes (15–34) tenían antes de la pandemia la mayor asistencia
+
+Los precios del musical varían enormemente según producción y teatro
+
+🟫 6. Tecnologías utilizadas
+
+Python
+
+Pandas
+
+Matplotlib / Seaborn
+
+Jupyter Notebook
+
+CSV / UTF-8 / UTF-8-SIG
+
+🟪 7. Próximas ampliaciones
+
+EDA por Comunidad Autónoma (dataset listo pero pendiente de análisis)
+
+Gráficas comparativas entre CCAA
+
+Integración con Power BI / Tableau
+
+Comparativa teatro vs. musical vs. artes escénicas globales
+
+🟦 8. Autora
+
+Proyecto realizado por Ela Ruiz González, artista y analista de datos especializada en el cruce entre artes escénicas y tecnología.
